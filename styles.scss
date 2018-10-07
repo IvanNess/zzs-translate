@@ -25,10 +25,16 @@ h4{
 
 .menuWrapper{
   margin-bottom: 2em;
+  .logoDiv{
+    display: flex;
+    flex-direction: column;
+  }
   #logo{
     height: $textUpperrHeight + $telHeight;
-    position: relative;
-    top: 0.2em;
+    position: absolute;
+    @media (max-width: 410px) {
+      height: ($textUpperrHeight + $telHeight)/1.4;
+    }
   }  
   i{
     color: green;
@@ -36,6 +42,9 @@ h4{
     position: relative;
     left: 0.1em;
     top: 0.05em;
+    @media (max-width: 410px) {
+      transform: rotate(90deg) scale(0.7);
+    }
   }
   .tel{
     font: bold $telHeight $textType;
@@ -45,6 +54,12 @@ h4{
     margin-bottom: 0;
     font: bold $textUpperrHeight $textType;
     color: $textColor;
+    @media (max-width: 575.98px) {
+      font-size: $textUpperrHeight/1.2;
+    }
+    @media (max-width: 410px) {
+      font-size: $textUpperrHeight/1.4;
+    }
   }
 }
 
@@ -69,6 +84,13 @@ h4{
   height: 10em;
   margin-bottom: 2em;
   justify-content: center;
+  @media (max-width: 768px) {
+    width: 15em;
+  }
+  @media (max-width: 576px) {
+    width: 25em;
+    height: 6em;
+  } 
 }
 
 .srvbg {
@@ -88,6 +110,10 @@ h4{
     border-radius: $flagSize/2;
     border: 8px double black;
     margin: 0 1.5em 3em 1.5em;
+    @media (max-width: 575.98px) {
+      height: $flagSize/1.8;
+      width: $flagSize/1.8;
+    }
   }
 }
 
