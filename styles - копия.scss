@@ -1,0 +1,254 @@
+$mainColor: green;
+$textColor: black;
+$textType: Arial;
+$telHeight: 1.4em;
+$textUpperrHeight: 0.8em;
+$wrapperMargBottom: 2em;
+$wrapperMargTop: 1em;
+$h4margBottom: 2em;
+
+h1{
+  color: $mainColor;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+h4{
+  color: $textColor;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: $h4margBottom;
+}
+
+.menuWrapper{
+  margin-bottom: 2em;
+  #logo{
+    height: $textUpperrHeight + $telHeight;
+    position: relative;
+    top: 0.2em;
+  }  
+  i{
+    color: green;
+    transform: rotate(90deg) scale(0.9);
+    position: relative;
+    left: 0.1em;
+    top: 0.05em;
+  }
+  .tel{
+    font: bold $telHeight $textType;
+  }
+  p{
+    display: inline-block;
+    margin-bottom: 0;
+    font: bold $textUpperrHeight $textType;
+    color: $textColor;
+  }
+}
+
+.bannerWrapper{
+  img{
+    width: 100%;
+  }
+}
+
+.ibClass {
+  display: inline-block;
+}
+
+.services {
+  background-color: grey;
+  position: absolute;
+  left: 0;
+}
+
+.card {
+  width: 18em;
+  height: 10em;
+  margin-bottom: 2em;
+  justify-content: center;
+}
+
+.srvbg {
+  background-color: gray;
+  h1{
+    margin-top: $wrapperMargTop;
+  }
+}
+
+.langWrapper{
+  h1{
+    margin-top: $wrapperMargTop;
+  }
+  .png{
+    height: 8em;
+  }
+}
+
+.whyWrapper{
+  background-color: rgba(120, 120, 120, 0.15);
+  h1{
+    margin-top: $wrapperMargTop;
+  }
+}
+
+.formWrapper{
+  h1{
+    margin-top: $wrapperMargTop;
+  }
+  .ms-parent{
+    padding: 0;
+    width: inherit !important;
+    button{
+      height: 100%;
+      border: none;
+      &:focus{
+        box-shadow: 0 0 0 0.3rem rgba(0,123,255,.25);
+        outline: none;
+      }
+      .placeholder{
+        position: relative;
+      }
+      div{
+        top: 0.3em;
+      }
+    }
+  }
+}
+
+.flag {
+  background-color: green;
+  height: 10em;
+  width: 10em;
+  border-radius: 5em;
+  border: 6px double black;
+  transform: scale(0.5);
+  position: relative;
+  left: -1.5em;
+}
+
+.flags {
+  margin-right: 3em;
+  margin-left: 3em;
+  display: block;
+}
+
+.flagWrapper {
+  position: relative;
+  display: inline-block;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.why {
+  display: block;
+}
+
+.enumRef {
+  display: inline-block;
+  vertical-align: 0.6em;
+  color: $mainColor;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.whyText {
+  display: inline-block;
+  text-align: left;
+}
+
+.formWrapper{
+  color: #495057;
+  margin-bottom: 5em;
+  #customFile {
+    display: none;
+  }  
+  .custom-file{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;  
+  }
+  p, label{
+    margin: 0;
+  }
+  .customFileDiv{
+    text-align: center;
+    i{
+      position: absolute;
+      left: 1em;
+      transform: scale(-2.5, 2.2) rotate(-45deg);
+      top: -0.1em;
+    }  
+  }
+  .btn{
+    border-radius: 0.8em;
+  }
+}
+
+.contactWrapper{
+  margin-bottom: 4em;
+  .social{
+    position: relative;
+    top: -1.5em;
+  }
+  h4{
+    margin-bottom: 0.5em;
+  }
+  .card{
+    height: 6em;
+    width: auto;
+    border: none;
+    transform: scale(0.35);
+  }
+  .socIconWrapper{
+    background-image: url(images/socIcons.gif);
+    background-repeat: no-repeat;
+  }
+  .ytIcon{
+    background-position: -38px -39px;
+    width: 100px;
+    height: 100px;
+  }
+  .vkIcon {
+    background-position: -278px -39px;
+    width: 120px;
+    height: 100px;
+  }
+  .fbIcon {
+    background-position: -555px -33px;
+    width: 75px;
+    height: 117px;
+    vertical-align: -0.5em;
+  }
+  .igIcon{
+    background-position: -791px -39px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.footWrapper{
+  background-color: $textColor;
+  .row{
+    padding: 0.5em 0;
+    p{
+      margin-bottom: 0;
+      color: grey;
+    }
+  }
+  img{
+    width:2em;
+    margin-left: 9em;
+  }
+  .info{
+    font-size: 0.6em;
+  }
+  .zzs{
+    font-size: 1.0em;
+    margin-left: 25em;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
+
+/*# sourceMappingURL=styles.scss.map */

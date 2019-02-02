@@ -1,45 +1,32 @@
 $mainColor: green;
-$textColor: rgba(0,0,0, 0.9);
-$textType: Helvetica, Arial, sans-serif;
+$textColor: black;
+$textType: Arial;
 $telHeight: 1.4em;
 $textUpperrHeight: 0.8em;
 $wrapperMargBottom: 2em;
 $wrapperMargTop: 1em;
 $h4margBottom: 2em;
 $formTextColor: #999;
-$formInputTextColor: rgba(0, 0, 0, 0.8);
-$flagSize: 6em;
-$grayBGColor: rgba(0,0,0, 0.05);
-
 
 h1{
   color: $mainColor;
-  font-family: $textType;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  margin-bottom: 0.4em;
-  @media (max-width: 500px) {
-    font-size: 2em;
-  }
+  margin-bottom: 0.3em;
 }
 h4{
   color: $textColor;
-  font-family: $textType;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-bottom: $h4margBottom;
 }
 
 .menuWrapper{
   margin-bottom: 2em;
-  .logoDiv{
-    display: flex;
-    flex-direction: column;
-  }
   #logo{
     height: $textUpperrHeight + $telHeight;
-    position: absolute;
-    @media (max-width: 410px) {
-      height: ($textUpperrHeight + $telHeight)/1.4;
-    }
+    position: relative;
+    top: 0.2em;
   }  
   i{
     color: green;
@@ -47,9 +34,6 @@ h4{
     position: relative;
     left: 0.1em;
     top: 0.05em;
-    @media (max-width: 410px) {
-      transform: rotate(90deg) scale(0.7);
-    }
   }
   .tel{
     font: bold $telHeight $textType;
@@ -59,30 +43,12 @@ h4{
     margin-bottom: 0;
     font: bold $textUpperrHeight $textType;
     color: $textColor;
-    @media (max-width: 575.98px) {
-      font-size: $textUpperrHeight/1.2;
-    }
-    @media (max-width: 410px) {
-      font-size: $textUpperrHeight/1.4;
-    }
-  }
-  a:hover{
-    text-decoration: none;
   }
 }
 
 .bannerWrapper{
   img{
     width: 100%;
-  }
-  h4{
-    font-size: 1.4em;
-    line-height: 1.4;
-  }
-  @media (min-width: 1125px){
-    h4{
-      flex: 0 0 30em;
-    }
   }
 }
 
@@ -98,42 +64,15 @@ h4{
 
 .card {
   width: 18em;
-  height: 9em;
+  height: 10em;
   margin-bottom: 2em;
-  @media (max-width: 768px) {
-    width: 15em;
-    height: auto;
-  }
-  @media (max-width: 576px) {
-    width: 25em;
-    margin-bottom: 1em;
-  } 
+  justify-content: center;
 }
 
 .srvbg {
-  background-color:$grayBGColor;
+  background-color: gray;
   h1{
-    margin-top: $wrapperMargTop*1.1;
-    font-family: $textType;
-  }
-  h4{
-    font-size: 1.4em;
-    line-height: 1.4;
-  }
-  @media (min-width: 520px){
-    h4{
-      flex: 0 0 23em;
-    }
-  }
-  .row{
-    .card{
-      P, h3{
-        font-family: $textType;
-        font-size: 1.2em;
-        line-height: 1.2;
-        padding: 0 1.2em;
-      }
-    }
+    margin-top: $wrapperMargTop;
   }
 }
 
@@ -141,62 +80,20 @@ h4{
   h1{
     margin-top: $wrapperMargTop;
   }
-  .flag {
-    height: $flagSize;
-    width: $flagSize;
-    border-radius: $flagSize/2;
-    border: 4px double rgba(0,0,0, 0.1);
-    margin: 0 1.5em 3em 1.5em;
-    box-shadow: 0 0 7px lightgray;
-    @media (max-width: 575.98px) {
-      height: $flagSize/1.8;
-      width: $flagSize/1.8;
-    }
+  .png{
+    height: 8em;
   }
 }
 
 .whyWrapper{
-  background-color: $grayBGColor;
-  p{
-    font-size: 1em;
-    text-align: justify;
-    font-family: $textType;
-  }
+  background-color: rgba(120, 120, 120, 0.15);
   h1{
     margin-top: $wrapperMargTop;
-  }
-  .enumRef {
-    color: $mainColor;
-    font-size: 2em;
-    font-weight: 900;
-    margin-top: -0.4em;
   }
 }
 
 .formWrapper{
-  p{
-    color: $textColor;
-    font-family: $textType;
-    margin-bottom: $h4margBottom;
-  }
-  input, textarea, button{
-    font-size: 0.8em;
-  }
-  label{
-    span{
-      padding-left: 0.3em;
-      font-family: $textType;
-      font-size: 0.8em;
-      color: rgba(0, 0, 0, 0.8);
-    }
-  }
   .form-group{
-    .form-control{
-      color: $formInputTextColor;
-      .ms-choice{
-        color: $formInputTextColor;
-      }
-    }
     input::-moz-placeholder{
       color: $formTextColor;
     }
@@ -241,6 +138,16 @@ h4{
   }
 }
 
+.flag {
+  background-color: green;
+  height: 10em;
+  width: 10em;
+  border-radius: 5em;
+  border: 6px double black;
+  transform: scale(0.5);
+  position: relative;
+  left: -1.5em;
+}
 
 .flags {
   margin-right: 3em;
@@ -259,12 +166,21 @@ h4{
   display: block;
 }
 
+.enumRef {
+  display: inline-block;
+  vertical-align: 0.6em;
+  color: $mainColor;
+  font-size: 2em;
+  font-weight: 900;
+}
+
 .whyText {
   display: inline-block;
   text-align: left;
 }
 
 .formWrapper{
+  color: #495057;
   margin-bottom: 5em;
   #customFile {
     display: none;
@@ -276,7 +192,7 @@ h4{
     border: 1px solid #ced4da;
     border-radius: 0.25rem;  
   }
-  label{
+  p, label{
     margin: 0;
   }
   .customFileDiv{
@@ -294,16 +210,13 @@ h4{
 }
 
 .contactWrapper{
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   .social{
     position: relative;
     top: -1.5em;
   }
   h4{
     margin-bottom: 0.5em;
-    @media (max-width: 420px) {
-      font-size: 1.3em;
-    }
   }
   .card{
     height: 6em;
@@ -312,7 +225,7 @@ h4{
     transform: scale(0.35);
   }
   .socIconWrapper{
-    background-image: url(images/socIcons.png);
+    background-image: url(images/socIcons.gif);
     background-repeat: no-repeat;
   }
   .ytIcon{
@@ -347,26 +260,16 @@ h4{
       color: grey;
     }
   }
-
-  .logo{
-    align-self: center;
-    img{
-      width:2em;
-    }
-    @media (max-width: 768px) {
-      align-self: start;
-    }
+  img{
+    width:2em;
+    margin-left: 9em;
   }
   .info{
-    font-size: 0.45em;
+    font-size: 0.6em;
   }
   .zzs{
-    font-size: 0.8em;
-    align-self: center;
-    @media (max-width: 768px) {
-      align-self: start;
-      margin-top: -0.4em;
-    }
+    font-size: 1.0em;
+    margin-left: 25em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
