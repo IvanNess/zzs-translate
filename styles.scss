@@ -1,6 +1,6 @@
 $mainColor: green;
 $textColor: rgba(0,0,0, 0.9);
-$textType: Helvetica, "one more Helvetica", Arial, sans-serif;
+$textType: "Helvetica Neue", Helvetica, "one more Helvetica", Arial, sans-serif;
 $textHeight: 1.2em;
 $telHeight: 1.4em;
 $textUpperrHeight: 0.8em;
@@ -14,8 +14,7 @@ $grayBGColor: rgba(0,0,0, 0.05);
 
 @font-face {
   font-family: "one more Helvetica";
-  src: local("Helvetica"),
-       url("9202.otf");
+  src: url("9202.otf");
 }
 
 h1{
