@@ -1,6 +1,7 @@
 $mainColor: green;
 $textColor: rgba(0,0,0, 0.9);
 $textType: Helvetica, "one more Helvetica", Arial, sans-serif;
+$textHeight: 1.2em;
 $telHeight: 1.4em;
 $textUpperrHeight: 0.8em;
 $wrapperMargBottom: 2em;
@@ -134,7 +135,7 @@ h4{
     .card{
       P, h3{
         font-family: $textType;
-        font-size: 1.2em;
+        font-size: $textHeight;
         line-height: 1.2;
         padding: 0 1.2em;
       }
@@ -168,7 +169,7 @@ h4{
 .whyWrapper{
   background-color: $grayBGColor;
   p{
-    font-size: 1em;
+    font-size: $textHeight;
     text-align: justify;
     font-family: $textType;
   }
@@ -275,6 +276,9 @@ h4{
 }
 
 .formWrapper{
+  p{
+    font-size: $textHeight;
+  }
   margin-bottom: 5em;
   #customFile {
     display: none;

@@ -163,7 +163,7 @@ h4 {
   background-color: rgba(0, 0, 0, 0.05);
 }
 .whyWrapper p {
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: justify;
   font-family: Helvetica, "one more Helvetica", Arial, sans-serif;
 }
@@ -263,6 +263,9 @@ h4 {
 
 .formWrapper {
   margin-bottom: 5em;
+}
+.formWrapper p {
+  font-size: 1.2em;
 }
 .formWrapper #customFile {
   display: none;
