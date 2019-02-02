@@ -1,6 +1,6 @@
 $mainColor: green;
 $textColor: rgba(0,0,0, 0.9);
-$textType: Helvetica, Arial, sans-serif;
+$textType: Helvetica, "one more Helvetica", Arial, sans-serif;
 $telHeight: 1.4em;
 $textUpperrHeight: 0.8em;
 $wrapperMargBottom: 2em;
@@ -11,6 +11,11 @@ $formInputTextColor: rgba(0, 0, 0, 0.8);
 $flagSize: 6em;
 $grayBGColor: rgba(0,0,0, 0.05);
 
+@font-face {
+  font-family: "one more Helvetica";
+  src: local("Helvetica"),
+       url("9202.otf");
+}
 
 h1{
   color: $mainColor;
@@ -99,14 +104,14 @@ h4{
 .card {
   width: 18em;
   height: 9em;
-  margin-bottom: 2em;
+  margin-bottom: 0.8em; //2em;
   @media (max-width: 768px) {
     width: 15em;
     height: auto;
   }
   @media (max-width: 576px) {
     width: 25em;
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
   } 
 }
 
@@ -133,6 +138,11 @@ h4{
         line-height: 1.2;
         padding: 0 1.2em;
       }
+    }
+  }
+  @media (min-width: 1000px) {
+    .cardrow{
+      width: 56em;
     }
   }
 }
